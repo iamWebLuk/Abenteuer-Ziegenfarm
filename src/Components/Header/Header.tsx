@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import GoatIconBlack from '../../images/goat.png';
 import GoatIconWhite from '../../images/goatWhite.png';
 import Offer from '../Offer/Offer'
 import Pricing from '../Offer/Offer'
@@ -23,11 +22,9 @@ import {Link, Route, Router, Routes, useNavigate} from 'react-router-dom';
 export default function Header() {
 
     const pages = ['Offer', 'Pricing', 'Blog', 'Contact'];
-   // const routes = [{path: '/', component: Offer,}, {path: '/pricing', component: Pricing,}, {path: '/blog', component: Blog}];
 
     const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-  //   const routeComponents = routes.map(({path, component}, key) => <Route key={component.toString()} path={path} element={component.toString()} />)
 
         const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
         const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
@@ -54,7 +51,7 @@ export default function Header() {
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
                         <Link to='/' style={{textDecoration: 'none', color: 'white', display: 'flex'}}>
-                        <img src={GoatIconBlack} width={30} style={{marginRight: '20px'}}/>
+                        <img src={GoatIconWhite} width={30} style={{marginRight: '20px'}}/>
                         <Typography
                             variant="h6"
                             noWrap
