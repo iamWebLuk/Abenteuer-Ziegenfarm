@@ -24,19 +24,19 @@ useEffect(() => {
     }
 
     return (
-        <div>
-            <Box sx={{ flexGrow: 1 }}>
+        <div style={{backgroundColor: isShown==="summer" ? '#60b85c' : '#5cb8b5'}}>
+            <Box sx={{ flexGrow: 1}}>
                 <h2 style={{textAlign: 'center'}}>Offer</h2>
                 <Grid container spacing={{sm: 1, md: 1}} style={{justifyContent: 'center'}} alignItems="center">
                     <Grid item sm={12} md={5} m={1} ref={hoverRefSummer} onClick={() => handleClick("summer")}>
-                        <Paper style={{textAlign: 'center', height: '500px'}} elevation={isHoverSummer ? 8 : 1} >
+                        <Paper style={{textAlign: 'center', height: '500px', cursor: 'pointer'}} elevation={isHoverSummer ? 20 : 1} >
                             <h3 style={{textAlign: 'center', color: '#04a64b', fontFamily: '"Comic Sans MS", "Comic Sans", monospace'}}>Summer</h3>
                             <img src={ChildrenSummer} alt={"abc"} width='90%' height='85%'/>
                         </Paper>
 
                     </Grid>
                     <Grid item sm={12} md={5} m={1} ref={hoverRefWinter} onClick={() => handleClick("winter")}>
-                        <Paper style={{textAlign: 'center', height: '500px'}} elevation={isHoverWinter ? 8 : 1}>
+                        <Paper style={{textAlign: 'center', height: '500px', cursor: 'pointer'}} elevation={isHoverWinter ? 20 : 1}>
                             <h3 style={{textAlign: 'center', color: '#04a64b', fontFamily: '"Comic Sans MS", "Comic Sans", monospace'}}>Winter</h3>
                             <img src={Children} alt={"abc"} width='90%' height='85%'/>
                         </Paper>
