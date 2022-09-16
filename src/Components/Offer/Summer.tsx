@@ -6,7 +6,7 @@ import Ziege from '../../images/ziege.jpg';
 import Verstecken from '../../images/verstecken.jpg';
 import Puzzle from '../../images/puzzle.jpg';
 import Fangen from '../../images/fangen.jpg';
-
+import Sleep from '../../images/sleep.jpg'
 
 export default function Summer() {
 
@@ -71,7 +71,8 @@ export default function Summer() {
                 </Grid>
                 <Grid item sm={12} md={3} m={1}>
                     <Paper elevation={4}>
-                        Nappen
+                        <h3>Mittagsschlaf</h3>
+                        <img src={Sleep} alt={"abc"} width='70%' height='60%'/>
                     </Paper>
                 </Grid>
             </Grid>
