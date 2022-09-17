@@ -7,6 +7,7 @@ import Offer from "./Components/Offer/Offer";
 import Pricing from "./Components/Pricing/Pricing";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Kontakt/Contact";
+import Register from "./Components/Register/Register";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/offer' element={<Offer />} />
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/register' element={<Register />} />
           </Routes>
       </div>
   );
