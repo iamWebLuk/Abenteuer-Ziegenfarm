@@ -23,20 +23,7 @@ export default function Summer() {
         <div style={{textAlign: 'center'}}>
 
             <h4>Unsere Sommer Angebote:</h4>
-            <br />
-            Brot Backen
-            <br />
-            Ziegen Streicheln
-            <br />
-            Schneemann bauen
-            <br />
-            Schneeball Schlacht
-            <br />
-
-            <br />
-
-            <br />
-            <br />
+                <br />
             <Grid container spacing={{sm: 1, md: 1}} style={{justifyContent: 'center'}} alignItems="center">
                 <Grid item sm={12} md={3} m={1}>
                     <Paper elevation={4}>
