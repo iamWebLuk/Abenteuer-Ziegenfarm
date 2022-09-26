@@ -21,7 +21,7 @@ import {Link, Route, Router, Routes, useNavigate} from 'react-router-dom';
 
 export default function Header() {
 
-    const pages = ['Offer', 'Pricing', 'Blog', 'Contact'];
+    const pages = ['Offer', 'Pricing', 'Blog', 'Contact', 'Register'];
 
     const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -45,6 +45,7 @@ export default function Header() {
         };
 
         const navigate = useNavigate();
+
 
         return (
             <AppBar position="static">
