@@ -8,6 +8,8 @@ export default function Contact() {
 
     const [spend, setSpend] = useState(false);
 
+    const number: number = 1;
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <h2 style={{textAlign: 'center'}}>Contact</h2>
@@ -26,6 +28,8 @@ export default function Contact() {
                         F. +43 (0) 5524 8271 50
                         <br />
                         info@abenteuer-ziegenfarm.at
+                        <br />
+                        {number}
                     </Paper>
 
                 </Grid>

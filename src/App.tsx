@@ -7,6 +7,7 @@ import Offer from "./Components/Offer/Offer";
 import Pricing from "./Components/Pricing/Pricing";
 import Blog from "./Components/Blog/Blog";
 import Contact from "./Components/Kontakt/Contact";
+import CloseButton from "./Components/Button/CloseButton";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div>
           <Header />
           <Routes>
+              <Route path='/' element={<CloseButton  backgroundColor={'blue'} color={'white'} text={'hallo'} />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/offer' element={<Offer />} />
         <Route path='/pricing' element={<Pricing />} />
