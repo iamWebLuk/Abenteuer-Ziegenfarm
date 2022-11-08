@@ -6,7 +6,7 @@ import { useHover } from "usehooks-ts";
 import Summer from "./Summer";
 import Winter from './Winter';
 
-export default function Offer() {
+const Offer = () => {
 
     const hoverRefSummer = useRef(null);
     const isHoverSummer = useHover(hoverRefSummer);
@@ -15,9 +15,9 @@ export default function Offer() {
 
     const [isShown, setIsShown] = useState("summer");
 
-useEffect(() => {
+    useEffect(() => {
 
-}, [])
+    }, [])
 
     const handleClick = (season: string) => {
         setIsShown(season);
@@ -47,3 +47,5 @@ useEffect(() => {
         </div>
     );
 }
+
+export default Offer;

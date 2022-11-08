@@ -1,4 +1,4 @@
-import Contact from "../Components/Kontakt/Contact";
+import Contact from "../Components/Contact";
 
 export default {
     title: "Button",

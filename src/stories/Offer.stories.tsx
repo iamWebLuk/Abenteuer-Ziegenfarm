@@ -1,4 +1,4 @@
-import Offer from "../Components/Offer/Offer";
+import Offer from "../Components/Offer";
 
 export default {
     title: "Title",
