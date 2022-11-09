@@ -1,6 +1,7 @@
 import * as React from 'react';
 import CloseButton from "../Components/Button/CloseButton";
 import { Meta, Story } from "@storybook/react";
+import {useState} from "@storybook/addons";
 
 interface IProps {
     backgroundColor: string,
@@ -11,19 +12,28 @@ interface IProps {
 export default {
     title: 'Test',
     component: CloseButton,
-    argTypes: {onClick: {action: 'clicked'}}
+    argTypes: { handleClick: {action: {backgroundColor: 'blue'}}},
 } as Meta<IProps>;
 
-export const Primary: Story<IProps> = (args) => <CloseButton {...args} />;
+
+const Template: Story<IProps> = args => {
+
+    const [name, setName] = useState("anja");
+
+    return <CloseButton handleClick={ (): void => {
+    setName("antonio");
+}} {...args} />}
+
+export const Primary = Template.bind({});
 Primary.args = {
     backgroundColor: 'black',
     color: 'white',
     text: 'test123',
 }
 
-export const OrangeButton: Story<IProps> = (args) => <CloseButton {...args} />;
+export const OrangeButton = Template.bind({})
 OrangeButton.args = {
     backgroundColor: 'orange',
     color: 'black',
-    text: 'this is an orange button',
+    text: 'Button'
 }

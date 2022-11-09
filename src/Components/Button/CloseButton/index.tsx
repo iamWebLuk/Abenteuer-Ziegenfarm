@@ -6,16 +6,13 @@ interface CloseButtonProps {
     backgroundColor: string,
     color: string,
     text: string
+    handleClick: () => void
 }
 
-const CloseButton = ({ backgroundColor, color, text }:CloseButtonProps) => {
-
-    const buttonClick = () => {
-        console.log("button is clicked")
-    }
+const CloseButton = ({ backgroundColor, color, text, handleClick }:CloseButtonProps) => {
 
     return (
-        <StyledButton backgroundColor={backgroundColor} colors={color} onClick={buttonClick}>
+        <StyledButton backgroundColor={backgroundColor} colors={color} onClick={handleClick}>
             {text}
         </StyledButton>
     )
